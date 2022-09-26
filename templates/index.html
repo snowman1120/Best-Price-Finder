@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>
+        Amazon scraper
+    </title>
+</head>
+<body bgcolor="grey">
+<br>
+<form action="/results" method="post" style="text-align:center;">
+    <h2>
+        Enter the search key:
+    </h2>
+    <input type="text" id="key" name="key" required><br>
+    <h2>
+        Enter the number of results to be obtained :
+    </h2>
+    <input type="number" id="count" name="count" min="0" required><br>
+    <h2>
+        Enter how many times to repeat the job : After every :
+        <input type="number" id="duration" name="duration" min="2" max="10" step="2" required>Hours
+    </h2>
+    <button type="submit" value="submit">Create job
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>
+        Results
+    </title>
+</head>
+
+<body>
+<h2 style="text-align:center;">
+    Search term : {{ key }}
+</h2>
+<h3>
+    Items extracted : {{ count }}
+</h3>
+<hr>
+<table border="1">
+    <tr>
+        <th><b>Item name </b></th>
+        <th><b>Price in USD</b></th>
+    </tr>
+{% for product_data in data %}
+    <tr>
+        <td>
+            {{ product_data['title'] }}
+        </td>
+        <td>
+            {{ product_data['price'] }}
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,975 @@
+werkzeug:INFO:2022-09-23 12:30:56,766:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-23 12:30:56,766:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-23 12:31:09,594:127.0.0.1 - - [23/Sep/2022 12:31:09] "GET / HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-23 12:31:09,950:127.0.0.1 - - [23/Sep/2022 12:31:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+urllib3.connectionpool:DEBUG:2022-09-23 12:31:16,135:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-23 12:31:17,141:https://www.amazon.com:443 "GET /s?k=small+brass+flute+for+c+type+d+type+e+type&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-23 12:31:18,417:37 no. of items added..
+root:INFO:2022-09-23 12:31:18,417:Required results obtained : 5
+werkzeug:INFO:2022-09-23 12:31:18,424:127.0.0.1 - - [23/Sep/2022 12:31:18] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-23 21:29:57,500:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-23 21:29:57,500:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-23 21:46:08,900:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-23 21:46:08,901:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-23 21:47:07,439:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-23 21:47:08,230:https://www.amazon.com:443 "GET /s?k=phone&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-23 21:47:09,885:5 no. of items added..
+root:INFO:2022-09-23 21:47:09,885:Required results obtained : 5
+root:INFO:2022-09-23 21:47:09,885:Saving data to Mongodb...
+werkzeug:INFO:2022-09-23 21:47:09,886:127.0.0.1 - - [23/Sep/2022 21:47:09] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-23 21:47:14,655:Data saved successfully.
+werkzeug:INFO:2022-09-24 12:05:23,604:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 12:05:23,605:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:43,439:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:43,941:https://www.amazon.com:443 "GET /s?k=phone&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:45,170:1 no. of items added..
+root:INFO:2022-09-24 12:05:45,201:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:45,203:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:46,087:https://www.amazon.com:443 "GET /s?k=phone&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:47,600:1 no. of items added..
+root:INFO:2022-09-24 12:05:47,618:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:47,620:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:48,048:https://www.amazon.com:443 "GET /s?k=phone&page=3 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:49,408:1 no. of items added..
+root:INFO:2022-09-24 12:05:49,425:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:49,427:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:49,728:https://www.amazon.com:443 "GET /s?k=phone&page=4 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:50,710:1 no. of items added..
+root:INFO:2022-09-24 12:05:50,724:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:50,726:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:51,440:https://www.amazon.com:443 "GET /s?k=phone&page=5 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:52,851:1 no. of items added..
+root:INFO:2022-09-24 12:05:52,867:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:52,869:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:53,576:https://www.amazon.com:443 "GET /s?k=phone&page=6 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:55,236:1 no. of items added..
+root:INFO:2022-09-24 12:05:55,249:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:55,251:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:55,965:https://www.amazon.com:443 "GET /s?k=phone&page=7 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:57,093:1 no. of items added..
+root:INFO:2022-09-24 12:05:57,108:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:57,110:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:57,413:https://www.amazon.com:443 "GET /s?k=phone&page=8 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:05:58,723:1 no. of items added..
+root:INFO:2022-09-24 12:05:58,754:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:58,758:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:05:59,267:https://www.amazon.com:443 "GET /s?k=phone&page=9 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:00,437:1 no. of items added..
+root:INFO:2022-09-24 12:06:00,447:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:00,449:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:00,848:https://www.amazon.com:443 "GET /s?k=phone&page=10 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:02,499:1 no. of items added..
+root:INFO:2022-09-24 12:06:02,512:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:02,514:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:03,226:https://www.amazon.com:443 "GET /s?k=phone&page=11 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:04,563:1 no. of items added..
+root:INFO:2022-09-24 12:06:04,574:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:04,576:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:05,076:https://www.amazon.com:443 "GET /s?k=phone&page=12 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:06,231:1 no. of items added..
+root:INFO:2022-09-24 12:06:06,242:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:06,244:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:07,497:https://www.amazon.com:443 "GET /s?k=phone&page=13 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:08,400:1 no. of items added..
+root:INFO:2022-09-24 12:06:08,410:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:08,412:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:08,912:https://www.amazon.com:443 "GET /s?k=phone&page=14 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:10,751:1 no. of items added..
+root:INFO:2022-09-24 12:06:10,763:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:10,765:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:11,186:https://www.amazon.com:443 "GET /s?k=phone&page=15 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:12,400:1 no. of items added..
+root:INFO:2022-09-24 12:06:12,411:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:12,413:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:12,815:https://www.amazon.com:443 "GET /s?k=phone&page=16 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:13,794:1 no. of items added..
+root:INFO:2022-09-24 12:06:13,807:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:13,809:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:14,230:https://www.amazon.com:443 "GET /s?k=phone&page=17 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:15,497:1 no. of items added..
+root:INFO:2022-09-24 12:06:15,509:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:15,514:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:16,764:https://www.amazon.com:443 "GET /s?k=phone&page=18 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:17,980:1 no. of items added..
+root:INFO:2022-09-24 12:06:17,993:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:17,995:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:18,507:https://www.amazon.com:443 "GET /s?k=phone&page=19 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:19,450:1 no. of items added..
+root:INFO:2022-09-24 12:06:19,463:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:19,466:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:19,863:https://www.amazon.com:443 "GET /s?k=phone&page=20 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:20,909:1 no. of items added..
+root:INFO:2022-09-24 12:06:20,915:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:20,917:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:06:21,233:https://www.amazon.com:443 "GET /s?k=phone&page=21 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:06:22,077:1 no. of items added..
+root:INFO:2022-09-24 12:06:22,090:This is the last page...
+root:INFO:2022-09-24 12:06:22,091:1 no. of items extracted...
+root:INFO:2022-09-24 12:06:22,091:Saving data to Mongodb...
+werkzeug:INFO:2022-09-24 12:06:22,104:127.0.0.1 - - [24/Sep/2022 12:06:22] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-24 12:06:26,586:Data saved successfully.
+urllib3.connectionpool:DEBUG:2022-09-24 12:07:00,585:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:07:00,912:https://www.amazon.com:443 "GET /s?k=phone&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 12:07:01,946:local variable 'search_class' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\app.py", line 25, in show_results
+    results = scrape_data(key, count)
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 51, in scrape_data
+    temp = tag.find_next('div', attrs={'class':{search_class}})
+UnboundLocalError: local variable 'search_class' referenced before assignment
+app:ERROR:2022-09-24 12:07:01,949:Exception on /results [POST]
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2170, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a UnboundLocalError.
+werkzeug:INFO:2022-09-24 12:07:01,954:127.0.0.1 - - [24/Sep/2022 12:07:01] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+werkzeug:INFO:2022-09-24 12:07:44,878:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 12:07:44,878:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 12:07:48,231:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:07:48,958:https://www.amazon.com:443 "GET /s?k=phone&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 12:07:49,914:local variable 'search_class' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\app.py", line 25, in show_results
+    results = scrape_data(key, count)
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 51, in scrape_data
+    temp = tag.find_next('div', attrs={'class':{search_class}})
+UnboundLocalError: local variable 'search_class' referenced before assignment
+werkzeug:INFO:2022-09-24 12:07:49,918:127.0.0.1 - - [24/Sep/2022 12:07:49] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 12:10:54,295:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 12:10:54,296:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 12:10:57,651:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:10:58,480:https://www.amazon.com:443 "GET /s?k=phone&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:10:59,453:16 no. of items added..
+root:INFO:2022-09-24 12:10:59,453:Required results obtained : 4
+root:INFO:2022-09-24 12:10:59,453:Saving data to Mongodb...
+werkzeug:INFO:2022-09-24 12:10:59,454:127.0.0.1 - - [24/Sep/2022 12:10:59] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-24 12:11:04,120:Data saved successfully.
+werkzeug:INFO:2022-09-24 12:26:18,448:127.0.0.1 - - [24/Sep/2022 12:26:18] "[31m[1mGET /results HTTP/1.1[0m" 405 -
+urllib3.connectionpool:DEBUG:2022-09-24 12:26:29,150:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:26:30,378:https://www.amazon.com:443 "GET /s?k=book&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:26:30,796:0 no. of items added..
+root:INFO:2022-09-24 12:26:30,798:This is the last page...
+root:INFO:2022-09-24 12:26:30,798:0 no. of items extracted...
+root:INFO:2022-09-24 12:26:30,798:Saving data to Mongodb...
+werkzeug:INFO:2022-09-24 12:26:30,798:127.0.0.1 - - [24/Sep/2022 12:26:30] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-24 12:26:35,027:Data saved successfully.
+werkzeug:INFO:2022-09-24 12:33:51,847:127.0.0.1 - - [24/Sep/2022 12:33:51] "GET / HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 12:33:54,227:127.0.0.1 - - [24/Sep/2022 12:33:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+root:ERROR:2022-09-24 12:34:00,059:400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\wrappers.py", line 128, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\werkzeug\wrappers\request.py", line 611, in on_json_loading_failed
+    raise BadRequest(
+werkzeug.exceptions.BadRequest: 400 Bad Request: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\app.py", line 21, in show_results
+    try :
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\werkzeug\wrappers\request.py", line 571, in get_json
+    return self.on_json_loading_failed(None)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\wrappers.py", line 133, in on_json_loading_failed
+    raise BadRequest() from e
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+werkzeug:INFO:2022-09-24 12:34:02,789:127.0.0.1 - - [24/Sep/2022 12:34:02] "POST /results HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 12:35:35,041:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:35:35,542:https://www.amazon.com:443 "GET /s?k=book&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:35:35,970:0 no. of items added..
+root:INFO:2022-09-24 12:35:35,972:This is the last page...
+root:INFO:2022-09-24 12:35:35,972:0 no. of items extracted...
+root:INFO:2022-09-24 12:35:35,972:Saving data to Mongodb...
+werkzeug:INFO:2022-09-24 12:35:35,973:127.0.0.1 - - [24/Sep/2022 12:35:35] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-24 12:35:40,197:Data saved successfully.
+urllib3.connectionpool:DEBUG:2022-09-24 12:35:41,207:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:35:41,908:https://www.amazon.com:443 "GET /s?k=phone&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:35:43,155:16 no. of items added..
+root:INFO:2022-09-24 12:35:43,156:Required results obtained : 5
+root:INFO:2022-09-24 12:35:43,156:Saving data to Mongodb...
+werkzeug:INFO:2022-09-24 12:35:43,156:127.0.0.1 - - [24/Sep/2022 12:35:43] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-24 12:35:47,610:Data saved successfully.
+werkzeug:INFO:2022-09-24 12:35:50,657:127.0.0.1 - - [24/Sep/2022 12:35:50] "GET / HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 12:37:48,721:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 12:37:48,721:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 12:37:53,952:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:37:54,282:https://www.amazon.com:443 "GET /s?k=samsung&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:37:55,402:9 no. of items added..
+root:INFO:2022-09-24 12:37:55,402:Required results obtained : 3
+root:INFO:2022-09-24 12:37:55,402:Saving data to Mongodb...
+werkzeug:INFO:2022-09-24 12:37:55,403:127.0.0.1 - - [24/Sep/2022 12:37:55] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-24 12:38:00,022:Data saved successfully.
+urllib3.connectionpool:DEBUG:2022-09-24 12:38:05,402:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:38:05,858:https://www.amazon.com:443 "GET /s?k=phone&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:38:07,042:1 no. of items added..
+root:INFO:2022-09-24 12:38:07,057:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 12:38:07,059:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 12:38:07,929:https://www.amazon.com:443 "GET /s?k=phone&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 12:38:08,941:17 no. of items added..
+root:INFO:2022-09-24 12:38:08,941:Required results obtained : 5
+root:INFO:2022-09-24 12:38:08,941:Saving data to Mongodb...
+werkzeug:INFO:2022-09-24 12:38:08,942:127.0.0.1 - - [24/Sep/2022 12:38:08] "POST /results HTTP/1.1" 200 -
+root:INFO:2022-09-24 12:38:13,584:Data saved successfully.
+werkzeug:INFO:2022-09-24 13:01:12,538:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 13:01:12,538:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 13:01:15,445:127.0.0.1 - - [24/Sep/2022 13:01:15] "GET / HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 13:01:30,402:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:01:30,969:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 13:01:32,045:'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\app.py", line 29, in show_results
+    results = scrape_data(key, count)
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 89, in scrape_data
+    price = float(price.replace('$', '').replace(',',''))
+AttributeError: 'NoneType' object has no attribute 'replace'
+werkzeug:INFO:2022-09-24 13:01:32,047:127.0.0.1 - - [24/Sep/2022 13:01:32] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 13:40:40,476:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 13:40:40,477:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 13:40:43,101:127.0.0.1 - - [24/Sep/2022 13:40:43] "GET / HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 13:40:56,147:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:40:56,489:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:40:57,402:0 no. of items added..
+root:INFO:2022-09-24 13:40:57,414:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 13:40:57,415:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:40:57,761:https://www.amazon.com:443 "GET /s?k=apple&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:40:58,480:0 no. of items added..
+root:INFO:2022-09-24 13:40:58,487:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 13:40:58,489:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:40:59,008:https://www.amazon.com:443 "GET /s?k=apple&page=3 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:41:00,271:15 no. of items added..
+root:INFO:2022-09-24 13:41:00,271:Required results obtained : 10
+app:ERROR:2022-09-24 13:41:00,297:Exception on /results [POST]
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2153, in make_response
+    rv = self.json.response(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\json\provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\json\provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\json\provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type ObjectId is not JSON serializable
+werkzeug:INFO:2022-09-24 13:41:00,394:127.0.0.1 - - [24/Sep/2022 13:41:00] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+werkzeug:INFO:2022-09-24 13:44:37,552:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 13:44:37,552:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 13:44:58,147:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:44:58,902:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:45:00,060:10 no. of items added..
+root:INFO:2022-09-24 13:45:00,061:Required results obtained : 10
+werkzeug:INFO:2022-09-24 13:45:00,075:127.0.0.1 - - [24/Sep/2022 13:45:00] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 13:47:46,770:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 13:47:46,771:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 13:48:01,614:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:48:02,324:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:48:03,169:0 no. of items added..
+root:INFO:2022-09-24 13:48:03,176:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 13:48:03,178:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:48:03,578:https://www.amazon.com:443 "GET /s?k=apple&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:48:04,826:16 no. of items added..
+root:INFO:2022-09-24 13:48:04,826:Required results obtained : 10
+werkzeug:INFO:2022-09-24 13:48:04,841:127.0.0.1 - - [24/Sep/2022 13:48:04] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 13:56:07,085:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 13:56:07,085:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 13:56:27,616:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:56:28,487:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:56:29,319:0 no. of items added..
+root:INFO:2022-09-24 13:56:29,326:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 13:56:29,328:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 13:56:29,631:https://www.amazon.com:443 "GET /s?k=apple&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 13:56:30,890:13 no. of items added..
+root:INFO:2022-09-24 13:56:30,890:Required results obtained : 10
+werkzeug:INFO:2022-09-24 13:56:30,905:127.0.0.1 - - [24/Sep/2022 13:56:30] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:04:36,467:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:04:36,467:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 14:04:43,964:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:04:45,322:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:04:46,455:16 no. of items added..
+root:INFO:2022-09-24 14:04:46,455:Required results obtained : 10
+werkzeug:INFO:2022-09-24 14:04:46,469:127.0.0.1 - - [24/Sep/2022 14:04:46] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:08:56,663:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:08:56,664:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 14:09:04,052:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:09:04,560:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:09:05,657:10 no. of items added..
+root:INFO:2022-09-24 14:09:05,658:Required results obtained : 10
+root:ERROR:2022-09-24 14:09:05,659:Cannot use MongoClient after close
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\app.py", line 29, in show_results
+    results = scrape_data(key, count)
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 109, in scrape_data
+    table.insert_one(item)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\mongo_client.py", line 1219, in _select_server
+    topology = self._get_topology()
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\mongo_client.py", line 1175, in _get_topology
+    self._topology.open()
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\topology.py", line 192, in open
+    self._ensure_opened()
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\pymongo\topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+werkzeug:INFO:2022-09-24 14:09:05,681:127.0.0.1 - - [24/Sep/2022 14:09:05] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:09:33,998:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:09:33,998:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 14:09:54,192:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:09:54,192:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 14:10:00,440:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:10:01,113:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:10:02,191:16 no. of items added..
+root:INFO:2022-09-24 14:10:02,192:Required results obtained : 10
+werkzeug:INFO:2022-09-24 14:10:02,523:127.0.0.1 - - [24/Sep/2022 14:10:02] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:15:21,101:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:15:21,102:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 14:15:27,824:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:15:28,398:https://www.amazon.com:443 "GET /s?k=apple&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:15:29,229:10 no. of items added..
+root:INFO:2022-09-24 14:15:29,229:Required results obtained : 10
+werkzeug:INFO:2022-09-24 14:15:29,507:127.0.0.1 - - [24/Sep/2022 14:15:29] "POST /results HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 14:17:22,038:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:17:22,459:https://www.amazon.com:443 "GET /s?k=hard+disk&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:17:23,430:4 no. of items added..
+root:INFO:2022-09-24 14:17:23,443:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:17:23,445:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:17:23,744:https://www.amazon.com:443 "GET /s?k=hard+disk&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:17:24,657:20 no. of items added..
+root:INFO:2022-09-24 14:17:24,657:Required results obtained : 10
+werkzeug:INFO:2022-09-24 14:17:25,039:127.0.0.1 - - [24/Sep/2022 14:17:25] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:18:23,262:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:18:23,262:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 14:18:45,088:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:18:45,744:https://www.amazon.com:443 "GET /s?k=water+bottle&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:18:46,962:43 no. of items added..
+root:INFO:2022-09-24 14:18:46,986:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:18:46,988:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:18:47,529:https://www.amazon.com:443 "GET /s?k=water+bottle&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:18:48,657:70 no. of items added..
+root:INFO:2022-09-24 14:18:48,685:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:18:48,687:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:18:49,506:https://www.amazon.com:443 "GET /s?k=water+bottle&page=3 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:18:50,667:106 no. of items added..
+root:INFO:2022-09-24 14:18:50,667:Required results obtained : 100
+werkzeug:INFO:2022-09-24 14:18:52,744:127.0.0.1 - - [24/Sep/2022 14:18:52] "POST /results HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:10,648:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:11,523:https://www.amazon.com:443 "GET /s?k=smartwatch&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:12,552:2 no. of items added..
+root:INFO:2022-09-24 14:21:12,565:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:12,567:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:13,283:https://www.amazon.com:443 "GET /s?k=smartwatch&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:14,264:18 no. of items added..
+root:INFO:2022-09-24 14:21:14,275:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:14,277:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:14,582:https://www.amazon.com:443 "GET /s?k=smartwatch&page=3 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:15,499:21 no. of items added..
+root:INFO:2022-09-24 14:21:15,510:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:15,512:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:15,813:https://www.amazon.com:443 "GET /s?k=smartwatch&page=4 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:16,753:22 no. of items added..
+root:INFO:2022-09-24 14:21:16,764:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:16,766:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:17,266:https://www.amazon.com:443 "GET /s?k=smartwatch&page=5 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:18,173:38 no. of items added..
+root:INFO:2022-09-24 14:21:18,184:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:18,186:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:18,702:https://www.amazon.com:443 "GET /s?k=smartwatch&page=6 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:19,653:38 no. of items added..
+root:INFO:2022-09-24 14:21:19,666:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:19,668:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:20,151:https://www.amazon.com:443 "GET /s?k=smartwatch&page=7 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:21,022:38 no. of items added..
+root:INFO:2022-09-24 14:21:21,032:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:21,034:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:21,772:https://www.amazon.com:443 "GET /s?k=smartwatch&page=8 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:22,717:40 no. of items added..
+root:INFO:2022-09-24 14:21:22,727:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:22,730:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:23,445:https://www.amazon.com:443 "GET /s?k=smartwatch&page=9 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:24,373:56 no. of items added..
+root:INFO:2022-09-24 14:21:24,384:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:24,386:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:24,803:https://www.amazon.com:443 "GET /s?k=smartwatch&page=10 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:25,684:70 no. of items added..
+root:INFO:2022-09-24 14:21:25,698:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:25,701:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:26,412:https://www.amazon.com:443 "GET /s?k=smartwatch&page=11 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:27,307:83 no. of items added..
+root:INFO:2022-09-24 14:21:27,319:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:27,321:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:27,878:https://www.amazon.com:443 "GET /s?k=smartwatch&page=12 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:28,738:84 no. of items added..
+root:INFO:2022-09-24 14:21:28,750:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:28,752:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:29,178:https://www.amazon.com:443 "GET /s?k=smartwatch&page=13 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:29,936:100 no. of items added..
+root:INFO:2022-09-24 14:21:29,947:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:29,950:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:30,377:https://www.amazon.com:443 "GET /s?k=smartwatch&page=14 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:31,345:114 no. of items added..
+root:INFO:2022-09-24 14:21:31,360:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:31,362:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:31,697:https://www.amazon.com:443 "GET /s?k=smartwatch&page=15 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:32,707:129 no. of items added..
+root:INFO:2022-09-24 14:21:32,718:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:32,720:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:33,145:https://www.amazon.com:443 "GET /s?k=smartwatch&page=16 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:33,972:129 no. of items added..
+root:INFO:2022-09-24 14:21:33,986:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:33,988:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:34,560:https://www.amazon.com:443 "GET /s?k=smartwatch&page=17 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:35,464:130 no. of items added..
+root:INFO:2022-09-24 14:21:35,473:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:35,475:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:35,902:https://www.amazon.com:443 "GET /s?k=smartwatch&page=18 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:36,727:130 no. of items added..
+root:INFO:2022-09-24 14:21:36,738:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:36,741:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:37,196:https://www.amazon.com:443 "GET /s?k=smartwatch&page=19 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:38,214:130 no. of items added..
+root:INFO:2022-09-24 14:21:38,225:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:38,227:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:38,825:https://www.amazon.com:443 "GET /s?k=smartwatch&page=20 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:39,676:130 no. of items added..
+root:INFO:2022-09-24 14:21:39,685:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:39,687:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:21:40,216:https://www.amazon.com:443 "GET /s?k=smartwatch&page=21 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:21:40,875:131 no. of items added..
+root:INFO:2022-09-24 14:21:40,889:This is the last page...
+root:INFO:2022-09-24 14:21:40,889:131 no. of items extracted...
+werkzeug:INFO:2022-09-24 14:21:40,890:127.0.0.1 - - [24/Sep/2022 14:21:40] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:23:31,871:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:23:31,871:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:40,353:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:40,658:https://www.amazon.com:443 "GET /s?k=smartwatch&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:41,719:16 no. of items added..
+root:INFO:2022-09-24 14:23:41,736:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:41,738:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:42,058:https://www.amazon.com:443 "GET /s?k=smartwatch&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:43,177:17 no. of items added..
+root:INFO:2022-09-24 14:23:43,190:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:43,192:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:43,514:https://www.amazon.com:443 "GET /s?k=smartwatch&page=3 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:44,485:31 no. of items added..
+root:INFO:2022-09-24 14:23:44,497:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:44,499:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:45,351:https://www.amazon.com:443 "GET /s?k=smartwatch&page=4 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:46,314:33 no. of items added..
+root:INFO:2022-09-24 14:23:46,324:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:46,326:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:47,024:https://www.amazon.com:443 "GET /s?k=smartwatch&page=5 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:47,938:33 no. of items added..
+root:INFO:2022-09-24 14:23:47,948:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:47,950:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:49,195:https://www.amazon.com:443 "GET /s?k=smartwatch&page=6 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:50,195:33 no. of items added..
+root:INFO:2022-09-24 14:23:50,206:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:50,208:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:50,507:https://www.amazon.com:443 "GET /s?k=smartwatch&page=7 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:51,480:34 no. of items added..
+root:INFO:2022-09-24 14:23:51,492:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:51,494:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:51,910:https://www.amazon.com:443 "GET /s?k=smartwatch&page=8 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:52,821:34 no. of items added..
+root:INFO:2022-09-24 14:23:52,831:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:52,834:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:53,132:https://www.amazon.com:443 "GET /s?k=smartwatch&page=9 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:54,044:50 no. of items added..
+root:INFO:2022-09-24 14:23:54,057:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:54,059:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:54,923:https://www.amazon.com:443 "GET /s?k=smartwatch&page=10 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:55,840:66 no. of items added..
+root:INFO:2022-09-24 14:23:55,851:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:55,854:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:56,827:https://www.amazon.com:443 "GET /s?k=smartwatch&page=11 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:23:57,894:71 no. of items added..
+root:INFO:2022-09-24 14:23:57,904:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:57,906:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:23:59,164:https://www.amazon.com:443 "GET /s?k=smartwatch&page=12 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:00,145:72 no. of items added..
+root:INFO:2022-09-24 14:24:00,155:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:00,157:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:00,560:https://www.amazon.com:443 "GET /s?k=smartwatch&page=13 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:01,751:88 no. of items added..
+root:INFO:2022-09-24 14:24:01,762:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:01,764:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:02,054:https://www.amazon.com:443 "GET /s?k=smartwatch&page=14 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:02,911:103 no. of items added..
+root:INFO:2022-09-24 14:24:02,927:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:02,930:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:03,548:https://www.amazon.com:443 "GET /s?k=smartwatch&page=15 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:04,496:116 no. of items added..
+root:INFO:2022-09-24 14:24:04,508:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:04,510:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:05,041:https://www.amazon.com:443 "GET /s?k=smartwatch&page=16 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:05,915:132 no. of items added..
+root:INFO:2022-09-24 14:24:05,927:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:05,929:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:06,232:https://www.amazon.com:443 "GET /s?k=smartwatch&page=17 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:07,151:143 no. of items added..
+root:INFO:2022-09-24 14:24:07,162:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:07,164:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:07,581:https://www.amazon.com:443 "GET /s?k=smartwatch&page=18 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:08,845:155 no. of items added..
+root:INFO:2022-09-24 14:24:08,856:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:08,858:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:09,706:https://www.amazon.com:443 "GET /s?k=smartwatch&page=19 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:10,675:155 no. of items added..
+root:INFO:2022-09-24 14:24:10,688:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:10,690:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:11,389:https://www.amazon.com:443 "GET /s?k=smartwatch&page=20 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:12,231:155 no. of items added..
+root:INFO:2022-09-24 14:24:12,237:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:12,239:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:24:13,093:https://www.amazon.com:443 "GET /s?k=smartwatch&page=21 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:24:13,889:156 no. of items added..
+root:INFO:2022-09-24 14:24:13,905:This is the last page...
+root:INFO:2022-09-24 14:24:13,905:156 no. of items extracted...
+werkzeug:INFO:2022-09-24 14:24:17,584:127.0.0.1 - - [24/Sep/2022 14:24:17] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:27:17,976:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:27:17,977:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:28,241:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:28,898:https://www.amazon.com:443 "GET /s?k=smartwatch&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:27:29,943:16 no. of items added..
+root:INFO:2022-09-24 14:27:29,953:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:29,955:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:31,020:https://www.amazon.com:443 "GET /s?k=smartwatch&page=2 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:27:32,862:28 no. of items added..
+root:INFO:2022-09-24 14:27:32,872:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:32,874:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:33,834:https://www.amazon.com:443 "GET /s?k=smartwatch&page=3 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 14:27:34,858:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 78, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 14:27:34,871:30 no. of items added..
+root:INFO:2022-09-24 14:27:34,883:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:34,884:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:35,727:https://www.amazon.com:443 "GET /s?k=smartwatch&page=4 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:27:36,657:43 no. of items added..
+root:INFO:2022-09-24 14:27:36,669:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:36,671:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:37,417:https://www.amazon.com:443 "GET /s?k=smartwatch&page=5 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:27:38,385:58 no. of items added..
+root:INFO:2022-09-24 14:27:38,397:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:38,400:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:39,225:https://www.amazon.com:443 "GET /s?k=smartwatch&page=6 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:27:40,438:72 no. of items added..
+root:INFO:2022-09-24 14:27:40,449:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:40,452:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:41,017:https://www.amazon.com:443 "GET /s?k=smartwatch&page=7 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 14:27:41,911:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 78, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 14:27:41,911:74 no. of items added..
+root:INFO:2022-09-24 14:27:41,921:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:41,924:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:42,485:https://www.amazon.com:443 "GET /s?k=smartwatch&page=8 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:27:43,416:90 no. of items added..
+root:INFO:2022-09-24 14:27:43,426:going to next page....
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:43,428:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:27:43,980:https://www.amazon.com:443 "GET /s?k=smartwatch&page=9 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:27:45,635:105 no. of items added..
+root:INFO:2022-09-24 14:27:45,635:Required results obtained : 100
+werkzeug:INFO:2022-09-24 14:27:47,719:127.0.0.1 - - [24/Sep/2022 14:27:47] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 14:40:51,218:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 14:40:51,218:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 14:40:53,424:127.0.0.1 - - [24/Sep/2022 14:40:53] "GET / HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 14:41:00,688:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:41:01,185:https://www.amazon.com:443 "GET /s?k=toy&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 14:41:02,307:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 81, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 14:41:02,318:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 81, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 14:41:02,322:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 81, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 14:41:02,324:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 81, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 14:41:02,327:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 81, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 14:41:02,328:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 81, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 14:41:02,347:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 78, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 14:41:02,348:63 no. of items added..
+root:INFO:2022-09-24 14:41:02,348:Required results obtained : 1
+werkzeug:INFO:2022-09-24 14:41:02,527:127.0.0.1 - - [24/Sep/2022 14:41:02] "POST /results HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 14:41:12,148:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 14:41:12,451:https://www.amazon.com:443 "GET /s?k=smartwatch&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 14:41:13,365:16 no. of items added..
+root:INFO:2022-09-24 14:41:13,365:Required results obtained : 2
+werkzeug:INFO:2022-09-24 14:41:13,522:127.0.0.1 - - [24/Sep/2022 14:41:13] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 15:00:03,755:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 15:00:03,756:[33mPress CTRL+C to quit[0m
+urllib3.connectionpool:DEBUG:2022-09-24 15:00:17,320:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 15:00:17,628:https://www.amazon.com:443 "GET /s?k=toy&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 15:00:19,197:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 15:00:19,201:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 15:00:19,204:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 15:00:19,206:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 15:00:19,207:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 15:00:19,222:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 15:00:19,222:64 no. of items added..
+root:INFO:2022-09-24 15:00:19,222:Required results obtained : 5
+werkzeug:INFO:2022-09-24 15:00:19,575:127.0.0.1 - - [24/Sep/2022 15:00:19] "POST /results HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 15:00:56,188:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 15:00:57,279:https://www.amazon.com:443 "GET /s?k=smartwatch&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 15:00:58,259:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 15:00:58,260:10 no. of items added..
+root:INFO:2022-09-24 15:00:58,260:Required results obtained : 2
+werkzeug:INFO:2022-09-24 15:00:58,506:127.0.0.1 - - [24/Sep/2022 15:00:58] "POST /results HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 15:02:07,723:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 15:02:08,494:https://www.amazon.com:443 "GET /s?k=smartwatch&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 15:02:09,690:16 no. of items added..
+root:INFO:2022-09-24 15:02:09,690:Required results obtained : 2
+werkzeug:INFO:2022-09-24 15:02:09,917:127.0.0.1 - - [24/Sep/2022 15:02:09] "POST /results HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 15:46:07,779:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 15:46:08,737:https://www.amazon.com:443 "GET /s?k=watch+for+man&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 15:46:09,927:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 15:46:09,927:63 no. of items added..
+root:INFO:2022-09-24 15:46:09,927:Required results obtained : 5
+werkzeug:INFO:2022-09-24 15:46:10,179:127.0.0.1 - - [24/Sep/2022 15:46:10] "POST /results HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:08:24,296:127.0.0.1 - - [24/Sep/2022 17:08:24] "[33mPOST /trigger HTTP/1.1[0m" 404 -
+werkzeug:INFO:2022-09-24 17:08:35,330:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:08:35,331:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:08:49,557:127.0.0.1 - - [24/Sep/2022 17:08:49] "POST /trigger HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:11:18,789:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:11:18,789:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:11:25,774:127.0.0.1 - - [24/Sep/2022 17:11:25] "POST /trigger HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:12:26,258:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:12:26,259:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:12:32,624:127.0.0.1 - - [24/Sep/2022 17:12:32] "POST /trigger HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:13:21,871:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:13:21,871:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:13:28,913:127.0.0.1 - - [24/Sep/2022 17:13:28] "POST /trigger HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:14:38,705:127.0.0.1 - - [24/Sep/2022 17:14:38] "POST /trigger HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:15:40,028:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:15:40,028:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:15:46,503:127.0.0.1 - - [24/Sep/2022 17:15:46] "POST /trigger HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:16:36,702:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:16:36,702:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:16:43,361:127.0.0.1 - - [24/Sep/2022 17:16:43] "POST /trigger HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:19:03,129:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:19:03,129:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:19:09,584:127.0.0.1 - - [24/Sep/2022 17:19:09] "POST /trigger HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 17:19:13,708:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 17:19:14,465:https://www.amazon.com:443 "GET /s?k=watch&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 17:19:15,525:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 17:19:15,526:66 no. of items added..
+root:INFO:2022-09-24 17:19:15,526:Required results obtained : 5
+urllib3.connectionpool:DEBUG:2022-09-24 17:19:19,957:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 17:19:20,921:https://www.amazon.com:443 "GET /s?k=football&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 17:19:22,618:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,622:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,624:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,625:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,628:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,631:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,635:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,636:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,638:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,640:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,641:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,644:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,645:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,648:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,649:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,650:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,650:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,651:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,651:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,654:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,656:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,658:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,659:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,661:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,662:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,663:'NoneType' object has no attribute 'span'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 88, in scrape_data
+    div.a.span.span.string
+AttributeError: 'NoneType' object has no attribute 'span'
+root:ERROR:2022-09-24 17:19:22,664:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,666:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,666:'NoneType' object has no attribute 'a'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'a'
+root:ERROR:2022-09-24 17:19:22,674:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 17:19:22,674:33 no. of items added..
+root:INFO:2022-09-24 17:19:22,674:Required results obtained : 5
+werkzeug:INFO:2022-09-24 17:26:56,181:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:26:56,181:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:27:58,691:127.0.0.1 - - [24/Sep/2022 17:27:58] "GET / HTTP/1.1" 200 -
+app:ERROR:2022-09-24 17:28:44,986:Exception on /results [POST]
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'show_results' did not return a valid response. The function either returned None or ended without a return statement.
+werkzeug:INFO:2022-09-24 17:28:44,988:127.0.0.1 - - [24/Sep/2022 17:28:44] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+app:ERROR:2022-09-24 17:30:14,587:Exception on /results [POST]
+Traceback (most recent call last):
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\DELL\anaconda3\envs\Amazon-scraper\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'show_results' did not return a valid response. The function either returned None or ended without a return statement.
+werkzeug:INFO:2022-09-24 17:30:14,587:127.0.0.1 - - [24/Sep/2022 17:30:14] "[35m[1mPOST /results HTTP/1.1[0m" 500 -
+werkzeug:INFO:2022-09-24 17:30:48,162:127.0.0.1 - - [24/Sep/2022 17:30:48] "POST /trigger HTTP/1.1" 200 -
+urllib3.connectionpool:DEBUG:2022-09-24 17:30:52,287:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 17:30:52,691:https://www.amazon.com:443 "GET /s?k=desktop&page=1 HTTP/1.1" 200 None
+root:INFO:2022-09-24 17:30:53,705:16 no. of items added..
+root:INFO:2022-09-24 17:30:53,705:Required results obtained : 5
+urllib3.connectionpool:DEBUG:2022-09-24 17:30:58,116:Starting new HTTPS connection (1): www.amazon.com:443
+urllib3.connectionpool:DEBUG:2022-09-24 17:30:59,367:https://www.amazon.com:443 "GET /s?k=laptop&page=1 HTTP/1.1" 200 None
+root:ERROR:2022-09-24 17:31:00,694:'NoneType' object has no attribute 'div'
+Traceback (most recent call last):
+  File "C:\Users\DELL\Desktop\Python work\Amazon-scraper\scraper.py", line 85, in scrape_data
+    title = temp.div.h2.a.span.string
+AttributeError: 'NoneType' object has no attribute 'div'
+root:INFO:2022-09-24 17:31:00,694:6 no. of items added..
+root:INFO:2022-09-24 17:31:00,694:Required results obtained : 4
+werkzeug:INFO:2022-09-24 17:56:40,692:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+werkzeug:INFO:2022-09-24 17:56:40,692:[33mPress CTRL+C to quit[0m
+werkzeug:INFO:2022-09-24 17:56:59,505:127.0.0.1 - - [24/Sep/2022 17:56:59] "GET / HTTP/1.1" 200 -
+werkzeug:INFO:2022-09-24 17:57:18,377:127.0.0.1 - - [24/Sep/2022 17:57:18] "POST /results HTTP/1.1" 200 -
