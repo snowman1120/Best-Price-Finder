@@ -29,7 +29,6 @@ def scrape_data(key:str, count:int,sample_item:Product, page:int=1) :
     ####### get mongodb details ########
 
     # load the environment variables
-<<<<<<< HEAD
     try:
         dotenv.load_dotenv()
         user = os.getenv('USER')
@@ -49,22 +48,6 @@ def scrape_data(key:str, count:int,sample_item:Product, page:int=1) :
     except Exception as e:
         logging.exception(e)
         return
-=======
-    dotenv.load_dotenv()
-    user = os.getenv('USER')
-    passwd = os.getenv('PASSWD')
-
-    # connect to the mongodb database
-    client = pymongo.MongoClient(
-        f"mongodb+srv://{user}:{passwd}@cluster0.x6statp.mongodb.net/?retryWrites=true&w=majority&ssl_cert_reqs=ssl.CERT_NONE")
-
-    db_name = key.replace(' ', '_')     # remove the whitespaces
-    db_name = f"{db_name}_{current_date}"
-
-    db = client[db_name]
-
-    table = db[current_time]
->>>>>>> 85367af577aa29a8d9b9b8c3d326608e1cbe234b
 
     #################################
 

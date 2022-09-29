@@ -43,7 +43,7 @@ class Product :
         self.soup = soup
 
     def get_title(self):
-        product_page = requests.get(self.url, headers=Product.HEADERS, proxies=Product.proxy_ips[1])
+        product_page = requests.get(self.url, headers=Product.HEADERS)
         soup = BeautifulSoup(product_page.content, "html.parser")
         title = None
 
