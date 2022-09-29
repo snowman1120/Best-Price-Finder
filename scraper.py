@@ -2,34 +2,54 @@
 This module handles operations regarding web scraping.
 """
 import datetime
-
+from product import Product
+from similarity_checker import is_similar
 import requests
 from datetime import date
 from bs4 import BeautifulSoup
 import pymongo
 import os
 import dotenv
+from bson.objectid import ObjectId
+from get_proxy import get_proxy
 import logging
 logging.basicConfig(filename='amazon-scraper.log', level=logging.DEBUG, format="%(name)s:%(levelname)s:%(asctime)s:%(message)s")
 
 
-def scrape_data(key:str, count:int, page:int=1) -> list:
+def scrape_data(key:str, count:int,sample_item:Product, page:int=1) :
     """
-    Extracts the product titles and prices from Amazon website for given search term for given count.<br>
-     Returns list containing dictionaries of format : {'title' : <str> , 'price' : <float>}
+    Extracts the urls, product titles and prices from Amazon website for given search term for given count.<br>
+     Returns list containing dictionaries of format : {'url':<str>, 'title' : <str> , 'price' : <float>}
     :param key: The search term used to search on Amazon website.
     :param count: The number of results required.
     :param page: Page number of search results.
-    :return: List of dictionaries containing title and price.
+    :return: List of dictionaries containing url, title and price of the products.
     """
 
     ####### get mongodb details ########
 
-    current_date = str(date.today())
-    current_time = datetime.datetime.now()
-    current_time = str(current_time.strftime("%H:%M:%S"))
-
     # load the environment variables
+<<<<<<< HEAD
+    try:
+        dotenv.load_dotenv()
+        user = os.getenv('USER')
+        passwd = os.getenv('PASSWD')
+
+        # connect to the mongodb database
+        client = pymongo.MongoClient(
+            f"mongodb+srv://{user}:{passwd}@cluster0.x6statp.mongodb.net/?retryWrites=true&w=majority")
+
+        db_name = "Data_amazon"
+        db = client[db_name]
+
+        table_name = sample_item.url
+        if len(table_name) >= 255:
+            table_name = key
+        table = db[table_name]
+    except Exception as e:
+        logging.exception(e)
+        return
+=======
     dotenv.load_dotenv()
     user = os.getenv('USER')
     passwd = os.getenv('PASSWD')
@@ -44,6 +64,7 @@ def scrape_data(key:str, count:int, page:int=1) -> list:
     db = client[db_name]
 
     table = db[current_time]
+>>>>>>> 85367af577aa29a8d9b9b8c3d326608e1cbe234b
 
     #################################
 
@@ -57,75 +78,160 @@ def scrape_data(key:str, count:int, page:int=1) -> list:
         'Connection': 'close'
     }
 
+    proxies = get_proxy()
+
     key = key.replace(' ', '+')
 
-    data = []               # to store the results
+    counter = 0
     titles = []             # stores titles of products to avoid duplicates
+    finished = False
 
-    while True:
-        url = f"https://www.amazon.com/s?k={key}&page={page}"
+    try :
+        while True:
+            data = []  # to store the results of this page
+            url = f"https://www.amazon.in/s?k={key}&page={page}&crid=308S42405947R&qid=1664363653&sprefix=%2Caps%2C179&ref=sr_pg_{page}"
 
-        products_page = requests.get(url, headers=HEADERS)
-        soup = BeautifulSoup(products_page.content, "html.parser")
+            products_page = None
+            for proxy in proxies:
+                try :
+                    products_page = requests.get(url, headers=HEADERS, proxies=proxy)
+                    break
+                except :
+                    continue
 
-        tags = soup.find_all('div', attrs={'class' : 's-result-item s-asin sg-col-0-of-12 sg-col-16-of-20 sg-col '
-                                                     's-widget-spacing-small sg-col-12-of-16'})
-        search_class = "a-section a-spacing-small a-spacing-top-small"
+            if products_page == None:
+                logging.exception("Proxy not available currently. Please try again after some time.")
+                return
 
-        if len(tags) == 0:          # if the items are listed in grid-format
-            tags = soup.find_all('div',
-                        attrs={'class' : 'a-section a-spacing-small puis-padding-left-small puis-padding-right-small'})
-            search_class = "a-section a-spacing-small puis-padding-left-small puis-padding-right-small"
+            soup = BeautifulSoup(products_page.content, "html.parser")
 
-        for tag in tags:
-            temp = tag.find_next('div', attrs={'class':{search_class}})
+            search_class1 = "a-section a-spacing-small a-spacing-top-small"
+            search_class2 = "a-section a-spacing-small puis-padding-left-small puis-padding-right-small"
+            search_class3 = "a-section a-spacing-small puis-padding-left-micro puis-padding-right-micro"
 
-            # some results may be due to ads or any other types of promotions, so don't include them
-            try :
-                title = temp.div.h2.a.span.string
-                price = temp.find_next('div',
-                            attrs={'class':'a-section a-spacing-none a-spacing-top-small s-price-instructions-style'}).\
-                    div.a.span.span.string
-            except Exception as e:
-                logging.exception(e)
-                continue
+            final_tags = []
+            tags = soup.find_all('div', attrs={'class': search_class1})
+            final_tags += tags
+            tags = soup.find_all('div', attrs={'class': search_class2})
+            final_tags += tags
+            tags = soup.find_all('div', attrs={'class': search_class3})
+            final_tags += tags
 
-            if price == 'Limited time deal' :
-                price_tag = temp.find_next('div', attrs={'class' : 'a-row a-size-base a-color-base'}).a.span.span.string
-                price = price_tag
+            for tag in final_tags[1:]:
+                try :
+                   title = tag.find('h2').span.string
+                   url = tag.find('h2').a.get('href')
+                   url = f"https://www.amazon.com{url}"
+                except Exception as e:
+                    logging.exception(e)
+                    continue
 
-            try :
-                price = float(price.replace('$', '').replace(',', ''))
-            except :
-                price = "NA"
+                # don't insert duplicate entries....
+                if title not in titles:
+                    try :
+                        new_item = Product(url)
+                        new_item.title = title
+                        data.append(new_item)
+                        titles.append(title)
+                        counter += 1
+                    except Exception as e:
+                        logging.exception(e)
+                        continue
 
-            # don't insert duplicate entries....
-            if title not in titles:
-                new_item = {'title' : title, 'price' : price}
-                data.append(new_item)
-                titles.append(title)
+            logging.info(f"{len(data)} no. of items added..")
 
-        logging.info(f"{len(data)} no. of items added..")
+            # check if we have extracted the given number of records
+            if counter+len(data) >= count:
+                logging.info(f"Required results obtained : {count}")
+                data = data[0:count-counter]
+                for item in data:
+                    new_product = is_similar(sample_item, item)
+                    if new_product != False:
+                        logging.info("Adding %s to database..." %new_product.title)
+                        table.insert_one({
+                            'url':new_product.url,
+                            'title' : new_product.title,
+                            'price' : new_product.price
+                        })
+                        logging.info("Product inserted successfully.")
+                client.close()
+                logging.info("\nScraping process complete.")
+                return data
 
-        # check if we have extracted the given number of records
-        if len(data) >= count:
-            logging.info(f"Required results obtained : {count}")
-            data = data[0:count]
+            # check if this is the last page of the search results
+            if soup.find('div', attrs={'class': 'a-section a-text-center s-pagination-container'}) == None :
+                logging.info("This is the last page...")
+                logging.info(f"{len(data)} no. of items extracted...")
+                finished = True
+            else :
+                logging.info("Going to next page....")
+                page = page + 1
+
             for item in data:
-                table.insert_one(item)
-            client.close()
-            return data
+                try :
+                    new_product = is_similar(sample_item, item)
+                except Exception as e:
+                    logging.exception(e)
+                    continue
+                if new_product != False:
+                    table.insert_one({
+                        'url': new_product.url,
+                        'title': new_product.title,
+                        'price': new_product.price})
+            if finished :
+                break
 
-        # check if this is the last page of the search results
-        if soup.find('div', attrs={'class': 'a-section a-text-center s-pagination-container'}) == None :
-            logging.info("This is the last page...")
-            logging.info(f"{len(data)} no. of items extracted...")
-            break
-        else :
-            logging.info("going to next page....")
-            page = page + 1
+        client.close()
+        logging.info("\nScraping process complete.")
+        return data
 
-    for item in data:
-        table.insert_one(item)
-    client.close()
-    return data
+    except Exception as e:
+        logging.exception(e)
+
+def update_db(db_name, table_name):
+    logging.info(f"\nStarting update for {db_name}.{table_name}...")
+    # load the environment variables
+    dotenv.load_dotenv()
+    user = os.getenv('USER')
+    passwd = os.getenv('PASSWD')
+
+    # connect to the mongodb database
+    client = pymongo.MongoClient(
+        f"mongodb+srv://{user}:{passwd}@cluster0.x6statp.mongodb.net/?retryWrites=true&w=majority")
+
+    db = client[db_name]
+    table = db[table_name]
+
+    cursor = table.find({})
+    for document in cursor:
+        try :
+            new_product = Product(document['url'])
+            new_product.get_title()
+            new_product.get_price()
+            table.update_one(
+                { 'url' : new_product.url},
+                { '$set' : {'title' : new_product.title, 'price' : new_product.price}}
+            )
+
+        except (requests.exceptions.MissingSchema , requests.exceptions.ConnectionError) :
+            table.delete_one({'_id' : ObjectId(document['_id'])})
+            logging.info("Document deleted...")
+            continue
+        except Exception as e:
+            logging.exception(e)
+
+    logging.info("\nUpdate complete.")
+
+
+
+"""url5 = "https://www.amazon.com/16-Core-32-Thread-Unlocked-Processor-Motherboard/dp/B09M3R1Z72"
+url = "https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE81-2T00-G25/dp/B08GV4YYV7?th=1"
+url3 = 'https://www.amazon.com/AT-DL72219-2-Handset-Cordless-Unsurpassed/dp/B088B1Y75K/ref=sr_1_46?keywords=phone&qid' \
+       '=1664287424&qu=eyJxc2MiOiI5LjIwIiwicXNhIjoiOC43MCIsInFzcCI6IjcuOTEifQ%3D%3D&sr=8-46&th=1 '
+sample = Product(url5)
+sample.get_title()
+sample.get_description()
+
+scrape_data("ryzen motherboard", 100, sample)
+"""
+#update_db('Data_amazon', 'https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE81-2T00-G25/dp/B08GV4YYV7?th=1')

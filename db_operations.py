@@ -36,3 +36,6 @@ def insert_data(table_name:str, data:list, db_name:str='Product_info') -> None:
 
     client.close()
 
+l = ['sfds', 'xvc' , 'rwer']
+s = "sfsfssfsfsfsf"
+print(list(map(lambda tag : {'tag' : tag, 'searhc':s}, l)))
