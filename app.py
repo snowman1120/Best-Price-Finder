@@ -38,12 +38,8 @@ def show_results():
 
             # connect to the mongodb database
             client = pymongo.MongoClient(
-<<<<<<< HEAD
                 f"mongodb+srv://{user}:{passwd}@cluster0.x6statp.mongodb.net/?retryWrites=true&w=majority",
                                         tls=True, tlsAllowInvalidCertificates=True)
-=======
-                f"mongodb+srv://{user}:{passwd}@cluster0.x6statp.mongodb.net/?retryWrites=true&w=majority&ssl_cert_reqs=ssl.CERT_NONE")
->>>>>>> 85367af577aa29a8d9b9b8c3d326608e1cbe234b
 
             db_name = "Job_info"
             duration = f"{str(duration)}_hrs"
