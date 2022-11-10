@@ -1,118 +1,196 @@
-import logging
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, jsonify, render_template, request, session, redirect
+from flask_session import Session
 import threading
-import dotenv, os
-import pymongo
-import ssl
-from scraper import scrape_data, update_db
-from product import Product
-logging.basicConfig(filename='amazon-scraper.log', level=logging.DEBUG, format="%(name)s:%(levelname)s:%(asctime)s:%(message)s")
 
+from rating import get_data_by_id, store_user_ratings, delete_item, update_similarity_scores, get_data_by_brand_name
+from crawler import begin_crawling
+
+from updater import set_update_process
+import helpers
+
+import redis_ops
+import logging
+import nltk
 
 app = Flask(__name__)
+app.config['SESSION_TYPE']  = 'filesystem'
+Session(app)
 
 
-@app.route('/')
+@app.route('/begin_crawl', methods=["POST", "GET"])
+def start_crawler():
+
+    try :
+        print("Preparing necessary requirements...")
+        nltk.download('stopwords')
+        nltk.download('punkt')
+    except Exception as e:
+        print("Preparing requirements failed.")
+        print(e)
+        return
+
+    try:
+        app_settings = helpers.get_app_settings()
+    except Exception as e:
+        print('Could not fetch app settings.')
+        print(e)
+        return jsonify(message="Begin_crawl failed as app settings could not be fetched.")
+
+    # categoryId = app_settings['amazonCategoryId']
+    categoryId = '6338422f02cdaa0d51efb354'
+
+    try :
+        address, category = helpers.get_address_by_id(categoryId)
+        address = helpers.get_formatted_url(address)
+
+    except Exception as e:
+        print("Could not retrieve category address.")
+        print(e)
+        return jsonify(message="Begin_crawl failed as app settings could not be fetched.")
+
+    if not address:
+        print("No category address found for the given id.")
+        return jsonify(message="NO category address url found.")
+
+    try :
+        new_thread = threading.Thread(target=begin_crawling, args=(address, categoryId))
+        new_thread.start()
+
+        return jsonify(message="Crawling process started.")
+    except Exception as e:
+        print("Could not start crawling function.")
+        print(e)
+        return jsonify(message="Something went wrong. Please check the logs..")
+
+
+@app.route('/update', methods=["POST", "GET"])
+def update():
+    try :
+        update_time = helpers.get_app_settings()['updatePeriod']
+        new_thread = threading.Thread(target=set_update_process, args=(update_time,))
+        new_thread.start()
+
+        return jsonify(message="Setting update process successful.")
+    except Exception  as e:
+        print("Could not set update function.")
+        print(e)
+        return jsonify(message="Something went wrong. Please check the logs.")
+
+
+@app.route('/index', methods=['POST', 'GET'])
 def home():
     return render_template('index.html')
 
 
-@app.route('/results', methods=['POST'])
-def show_results():
-    if request.method == 'POST':
+@app.route('/get_data_by_id', methods=['POST'])
+def get_data_by_id_value():
+    if request.method == "POST":
         try :
-            try :
-                req_data = request.get_json()
-                key = req_data['key']
-                sample_url = req_data['sample_url']
-                duration = int(req_data['duration'])
-            except :
-                key = request.form['key']
-                sample_url = request.form['sample_url']
-                duration = int(request.form['duration'])
-
-                # load the environment variables
-            dotenv.load_dotenv()
-            user = os.getenv('USER')
-            passwd = os.getenv('PASSWD')
-
-            # connect to the mongodb database
-            client = pymongo.MongoClient(
-                f"mongodb+srv://{user}:{passwd}@cluster0.x6statp.mongodb.net/?retryWrites=true&w=majority",
-                                        tls=True, tlsAllowInvalidCertificates=True)
-
-            db_name = "Job_info"
-            duration = f"{str(duration)}_hrs"
-            db = client[db_name]
-            table = db[duration]
-
-            table.insert_one({'url' : sample_url})
-            logging.info(f"Inserted url {sample_url} in Job_info database...")
-            client.close()
-
-            sample_item = Product(sample_url)
-            sample_item.get_title()
-            sample_item.get_description()
-
-            logging.info(f"\nStarting process for scraping data for url:{sample_item.url} and key:{key}..." )
-
-            # scraping for 1000 records
-            new_thread = threading.Thread(target=scrape_data, args=(key, 1000, sample_item))
-            new_thread.start()
-            new_thread.join()
-
-            return jsonify(message="Job created successfully.")
+            id = request.form['id']
+            data = get_data_by_id(id)
+            session['data'] = data
+            session['total_items'] = len(data)
+            session['viewed_items'] = 0
+            session['updated_items'] = 0
+            session['rating_info'] = {
+                'titleScore' : 0,
+                'descriptionScore' : 0,
+                'imageScore' : 0
+            }
+            return redirect('/get_item')
         except Exception as e:
-            return str(e)
+            print("Getting data failed.")
+            print(e)
+            return jsonify(message='Something went wrong. Please check the logs.')
 
 
-@app.route('/trigger', methods=['POST'])
-def trigger_function():
+@app.route('/get_data_by_brand', methods=['POST'])
+def get_data_by_brand():
+    if request.method == "POST":
+        try :
+            brand = request.form['brand']
+            data = get_data_by_brand_name(brand)
+            session['data'] = data
+            session['total_items'] = len(data)
+            session['viewed_items'] = 0
+            session['updated_items'] = 0
+            session['rating_info'] = {
+                'titleScore' : 0,
+                'descriptionScore' : 0,
+                'imageScore' : 0
+            }
+            return redirect('/get_item')
+        except Exception as e:
+            print("Getting data failed.")
+            print(e)
+            return jsonify(message='Something went wrong. Please check the logs.')
+
+
+@app.route('/get_item', methods=['GET', 'POST'])
+def get_item():
+    try:
+        item = session['data'].pop()
+    except IndexError :
+        return render_template('final.html')
+
+    data = []
+    data.append(item)
+    session['viewed_items'] += 1
+    return render_template('ratings.html', data = data, id= item['id'])
+
+
+@app.route('/update_ratings', methods=['POST'])
+def update_ratings():
     if request.method == 'POST':
-        data = request.get_json()
-        duration = int(data['duration'])
-        duration = f"{duration}_hrs"
-        searches = get_job_info("Job_info", duration)
+        data = {}
+        data['objId'] = request.form['id']
+        data['titleRating'] = request.form['titleRating']
+        data['descriptionRating'] = request.form['descriptionRating']
+        data['imageRating'] = request.form['imageRating']
+        try :
+            store_user_ratings(data)
+        except Exception as e:
+            logging.exception(e)
+            return redirect('/get_item')
 
-        if len(searches) == 0:
-            return jsonify(message="No job to run")
+        session['updated_items'] += 1
 
-        # start the process of saving the data in background
-        new_thread = threading.Thread(target=update_data, args=[searches])
-        new_thread.start()
-        new_thread.join()
+        r = redis_ops.connect_redis()
+        if r:
+            redis_ops.increase_value(r, 'count')
+            updated_items_till_now = redis_ops.get_value(r, 'count')
+            if updated_items_till_now:
+                if updated_items_till_now >= 100:
+                    new_thread = threading.Thread(target=update_similarity_scores)
+                    new_thread.start()
+                    print("Updating similarity scores...")
 
-        return jsonify(message="Update begun...")
-
-
-
-def get_job_info(db_name,table_name):
-    # load the environment variables
-    dotenv.load_dotenv()
-    user = os.getenv('USER')
-    passwd = os.getenv('PASSWD')
-
-    # connect to the mongodb database
-    client = pymongo.MongoClient(
-        f"mongodb+srv://{user}:{passwd}@cluster0.x6statp.mongodb.net/?retryWrites=true&w=majority&ssl_cert_reqs=ssl.CERT_NONE")
-
-    db = client[db_name]
-    table = db[table_name]
-    cursor = table.find({})
-    results = []
-    for document in cursor:
-        results.append({'url' : document['url']})
-
-    return results
+        return redirect('/get_item')
 
 
-def update_data(searches):
-    for search in searches:
-        new_thread = threading.Thread(target=update_db, args = ("Data_amazon", search['url']))
-        new_thread.start()
-        new_thread.join()
+@app.route('/delete_item', methods=["POST"])
+def delete():
+    if request.method == 'POST':
+        id = request.form['id']
+        try:
+            delete_item(id)
+        except Exception as e:
+            logging.exception(e)
+
+        return redirect('/get_item')
+
+
+@app.route('/update_similarity', methods=["GET", "POST"])
+def update_similarity():
+
+    update_similarity_scores()
+    session['updates_items'] = 0
+    session['rating_info'] = {}
 
 
 
 if __name__ == '__main__' :
-    app.run()
+    app.run(debug=True)
+
+
+

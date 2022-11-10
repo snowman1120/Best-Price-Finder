@@ -1,25 +1,14 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>
-        Amazon scraper
-    </title>
-</head>
-<body bgcolor="grey">
-<br>
-<form action="/results" method="post" style="text-align:center;">
-    <h2>
-        Enter the sample product url:
-    </h2>
-    <input type="url" id="sample_url" name="sample_url" required><br>
-    <h2>
-        Enter the sample product key:
-    </h2>
-    <input type="text" id="key" name="key" required><br>
-    <h2>
-        Enter how many times to repeat the job : After every :
-        <input type="number" id="duration" name="duration" min="2" max="20" step="2" required>Hours
-    </h2>
-    <button type="submit" value="submit">Create job
+<body>
+<form action="/get_data_by_id" method="post">
+Get items by id: <input type="text"  name="id">
+<button type="submit">submit</button>
 </form>
+<form action="/get_data_by_brand" method="post">
+Get items by brand name: <input type="text"  name="brand">
+<button type="submit">submit</button>
+</form>
+
 </body>
 </html>
